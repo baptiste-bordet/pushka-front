@@ -22,6 +22,7 @@ const Header = () => {
                         uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 300">
 
                         <nav className="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                            <a href="" className="uk-navbar-item uk-logo"><img src="logo.jpg"/></a>
                             <div className="uk-container uk-container-expand">
                                 <div uk-navbar>
 

@@ -5,12 +5,13 @@ import BIO_QUERY from "../../queries/bio";
 
 const Bio = () => {
     return (
-        <div>
+        <div className="section-wrapper">
+            <h2 className="section-title">BIO</h2>
             <Query query={BIO_QUERY} id={null}>
                 {({ data: { bio } }) => {
                     return (
                         <>
-                            <p>{bio.description}</p>
+                            <div>{bio.description}</div>
                             {/*<img src={`${process.env.REACT_APP_BACKEND_URL}${bio.image.url}`} alt="bio-pic" />*/}
                         </>
                     );

@@ -7,6 +7,7 @@ const Nav = () => {
         <div>
             <nav className="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
                 <div className="uk-navbar-center">
+                    <a href="" className="uk-navbar-item uk-logo"><img src="logo.jpg"/></a>
                     <ul className="uk-navbar-nav">
                         <li>
                             <Link to="/bio">Bio</Link>
