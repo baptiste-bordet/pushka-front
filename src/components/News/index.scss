@@ -7,7 +7,7 @@
     .news-item {
         width: 35%;
         margin: 20px;
-        border: 1px solid #333;
+        border: 1px solid #343A40;
 
         iframe {
             width: 100%;
@@ -17,8 +17,14 @@
         .news-text {
             padding: 20px;
 
+            h2 {
+                font-family: Cabin;
+                color: #868e96;
+            }
+
             .news-description {
                 white-space: pre-line;
+                color: #dee2e6;
             }
         }
     }

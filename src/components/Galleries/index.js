@@ -44,7 +44,6 @@ const Preview = ({ photos, openLightbox }) => {
 const Galleries = () => {
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(0);
-    const [photoArray, setPhotoArray] = useState([]);
 
     const openLightbox = useCallback((event, { photo, index }) => {
         setCurrentImage(index);
@@ -57,7 +56,7 @@ const Galleries = () => {
     };
 
     return (
-        <div className="news-wrapper">
+        <div className="galleries-wrapper">
             <Query query={GALLERIES_QUERY}>
                 {({ data: { galleries }}) => {
                     return galleries.map(({ titre, photos }, index) => {

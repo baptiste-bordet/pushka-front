@@ -8,14 +8,10 @@ const NavLinks = () => {
         <>
             <li><Link smooth to="#dates">Dates</Link></li>
             <li><Link smooth to="#news">News</Link></li>
-            <li><Link smooth to="#bio">Bio</Link></li>
-            <li><Link smooth to="#videos">Videos</Link></li>
-            <li><Link smooth to="#images">Images</Link></li>
+            <li><Link smooth to="#photos">Photos</Link></li>
         </>
     )
 }
-
-
 
 const Nav = () => {
     const [className, setClassName] = useState('');

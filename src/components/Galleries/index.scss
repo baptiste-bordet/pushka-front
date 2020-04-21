@@ -1,32 +1,12 @@
-.news-wrapper {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+.galleries-wrapper {
 
-    .news-item {
-        width: 35%;
-        margin: 20px;
-        border: 1px solid #333;
+    .gallerie-item {
 
-        iframe {
-            width: 100%;
-            height: 63%;
+        h3 {
+            margin-left: 20px;
+            color: #cccccc;
+            font-family: Cabin;
         }
-
-        .news-text {
-            padding: 20px;
-
-            .news-description {
-                white-space: pre-line;
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .news-item {
-        width: 100% !important;
     }
 }
 

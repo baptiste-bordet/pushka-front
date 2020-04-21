@@ -1,11 +1,18 @@
 @font-face {
     font-family: 'PermanentMarker';
-    src: url('/fonts/PermanentMarker-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('/fonts/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('/fonts/Cabin-Regular.ttf') format('truetype');
 }
 
 body {
     background: #18191A;
     color: #e4e6eb;
+    font-family: Cabin;
+    padding-bottom: 30px;
 }
 
 a {

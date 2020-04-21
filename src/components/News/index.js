@@ -31,4 +31,4 @@ const News = () => {
     );
 };
 
-export default section(News, { id:"news", title: "NEWS", color: "#242526" });
+export default section(News, { id:"news", title: "NEWS", color: "#212529" });
