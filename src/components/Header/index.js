@@ -19,7 +19,7 @@ const Header = () => {
                             </video>
 
                             <div className="video-overlay"></div>
-                            <img src="./logo_blanc_transparence.png" />
+                            <img src="./logo_blanc_transparence.png" alt="pushka logo"/>
                         </div>
 
                         <Nav />

@@ -1,0 +1,36 @@
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+
+    &.top {
+        padding-top: 120px;
+        margin-top: 120px;
+
+        &:before {
+            content: "";
+            display: block;
+            background: #000000;
+            height: 10vw;
+            width: 100%;
+            margin-top: -10vw;
+            -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+            transform: skew(0deg,4deg);
+            -ms-transform: skew(0deg,4deg);
+            -webkit-transform: skew(0deg,4deg);
+        }
+    }
+
+
+    .section-title {
+        color: #FFFFFF;
+        font-family: "PermanentMarker";
+        font-size: 45px;
+        margin-top: 70px;
+    }
+}

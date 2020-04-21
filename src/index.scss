@@ -4,7 +4,8 @@
 }
 
 body {
-    background: #000000;
+    background: #18191A;
+    color: #e4e6eb;
 }
 
 a {
@@ -21,18 +22,4 @@ img:hover {
     transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.section-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    //margin-top: 200px;
-    padding-top: 120px;
-
-    .section-title {
-        color: #FFFFFF;
-        font-family: "PermanentMarker";
-        font-size: 45px;
-    }
-}
 

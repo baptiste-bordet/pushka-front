@@ -1,10 +1,8 @@
 import React from "react";
-import Nav from "../../components/Nav";
-import Banner from "../../components/Banner";
 import Header from "../../components/Header";
-import Bio from "../../components/Bio";
 import News from "../../components/News";
 import Dates from "../../components/Dates";
+import Galleries from "../../components/Galleries";
 import "./index.scss";
 
 function App() {
@@ -13,7 +11,7 @@ function App() {
             <Header />
             <Dates />
             <News />
-            {/*<Bio />*/}
+            <Galleries />
         </div>
     );
 }
