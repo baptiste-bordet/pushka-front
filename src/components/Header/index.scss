@@ -1,30 +1,11 @@
-.header nav {
-    display: flex;
-    justify-content: center;
-}
+//.header nav {
+//    display: flex;
+//    justify-content: center;
+//}
 
-.header img {
-    width: 100%;
-}
-
-.uk-navbar-container:not(.uk-navbar-transparent) {
-    background: #000000;
-    color: #FFFFFF;
-}
-
-.uk-logo {
-    display: none;
-}
-
-.uk-sticky-fixed {
-    position: fixed !important;
-
-    .uk-logo {
-        display: block;
-        width: 100px;
-    }
-}
-
+//.header img {
+//    width: 100%;
+//}
 
 .video-wrapper {
     position: relative;
@@ -38,7 +19,6 @@
         content: '';
         position: absolute;
         background: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
         top: 0;
         right: 0;
         bottom: 0;

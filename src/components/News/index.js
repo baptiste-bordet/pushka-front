@@ -9,7 +9,7 @@ import "./index.scss";
 
 const News = () => {
     return (
-        <div className="section-wrapper">
+        <div id="news" className="section-wrapper">
             <h2 className="section-title">NEWS</h2>
             <div className="news-wrapper">
                 <Query query={NEWS_QUERY}>
