@@ -22,7 +22,7 @@ const MONTHS = [
 
 const Dates = () => {
     return (
-        <div id="tour" className="section-wrapper">
+        <div id="dates" className="section-wrapper">
             <h2 className="section-title">DATES</h2>
             <div className="date-wrapper">
                 <Query query={CONCERTS_QUERY}>

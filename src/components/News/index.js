@@ -3,7 +3,7 @@ import "./index.scss";
 import NEWS_QUERY from "../../queries/news";
 import Query from "../Query";
 
-import { parseYoutube } from '../../utils/linkParser';
+import { parseYoutube, handleTextLink } from '../../utils/linkParser';
 
 import "./index.scss";
 
@@ -21,7 +21,7 @@ const News = () => {
                                     {lien_youtube && <iframe id="ytplayer" type="text/html" src={parseYoutube(lien_youtube)} frameBorder="0" allowfullscreen="allowfullscreen"/>}
                                     <div className="news-text">
                                         <h2>{titre}</h2>
-                                        <p>{description}</p>
+                                        <div className="news-description" dangerouslySetInnerHTML={{__html: handleTextLink(description)}} />
                                     </div>
                                 </div>
                             )

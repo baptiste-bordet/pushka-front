@@ -3,24 +3,31 @@
   color: #FFFFFF;
 }
 
-//.uk-logo {
-//  display: none;
-//}
-//
-//.uk-sticky-fixed {
-//  position: fixed !important;
-//
-//  .uk-logo {
-//    display: block;
-//    width: 100px;
-//  }
-//}
-
 .uk-navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+
+  a {
+    font-family: "PermanentMarker" !important;
+    font-size: 20px !important;
+    color: #FFFFFF !important;
+  }
+
+
+  img {
+    width: 100px;
+  }
+}
+
+.uk-navbar-left img {
+  display: none;
+}
+
+.uk-sticky-fixed {
+  .uk-navbar-left img {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
@@ -29,9 +36,6 @@
     left: auto !important;
   }
 }
-
-
-
 
 #burger-menu {
   width: 40px;

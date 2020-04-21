@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./index.scss";
 import BANNER_QUERY from "../../queries/banner";
 import Query from "../Query";
@@ -18,7 +17,9 @@ const Header = () => {
                             <video autoPlay id="my-video" className="video fullscreen-bg__video"  muted loop>
                                 <source src="pushka-cover-2.mp4" type="video/mp4" />
                             </video>
+
                             <div className="video-overlay"></div>
+                            <img src="./logo_blanc_transparence.png" />
                         </div>
 
                         <Nav />

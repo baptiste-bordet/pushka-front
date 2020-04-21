@@ -6,7 +6,7 @@ import "./index.scss";
 const NavLinks = () => {
     return (
         <>
-            <li><Link smooth to="#tour">Tour</Link></li>
+            <li><Link smooth to="#dates">Dates</Link></li>
             <li><Link smooth to="#news">News</Link></li>
             <li><Link smooth to="#bio">Bio</Link></li>
             <li><Link smooth to="#videos">Videos</Link></li>
@@ -36,7 +36,7 @@ const Nav = () => {
                 <div className="uk-navbar-left">
                     <ul className="uk-navbar-nav">
                         <li className="uk-active">
-                            <a href="#">PUSHKA</a>
+                            <a href="#"><img src="./logo_blanc_transparence.png" /></a>
                         </li>
                     </ul>
                 </div>

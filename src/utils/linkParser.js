@@ -20,7 +20,20 @@ const parseYoutube = (link) => {
     return !code ? link : `https://www.youtube.com/embed/${code}`
 }
 
+// [Mon lien](https://youtu.be/ybTQJjYwO-Y)
+// => <a href="https://youtu.be/ybTQJjYwO-Y">Mon lien</a>
+const handleTextLink = (text) => {
+    const regex = RegExp('\\[.*?\\]\\(.*?\\)','g');
+
+    return text.replace(regex, (elem) => {
+        const link = elem.split('(')[1].split(')')[0];
+        const display = elem.split('[')[1].split(']')[0];
+
+        return `<a target="_blank" href="${link}">${display}</a>`;
+    });
+}
 
 export {
-    parseYoutube
+    parseYoutube,
+    handleTextLink
 }
