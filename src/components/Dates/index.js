@@ -49,4 +49,4 @@ const Dates = () => {
     );
 };
 
-export default section(Dates, { id:"dates", title: "DATES" });
+export default section(Dates, { id:"dates", title: "DATES", color: "#16181b" });

@@ -8,10 +8,16 @@
     src: url('/fonts/Cabin-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Abel';
+    src: url('/fonts/Abel-Regular.ttf') format('truetype');
+}
+
+
 body {
-    background: #18191A;
+    background: #16181b;
     color: #e4e6eb;
-    font-family: Cabin;
+    font-family: Abel;
     padding-bottom: 30px;
 }
 
@@ -22,6 +28,10 @@ a {
 h1 {
     font-family: Staatliches;
     font-size: 120px;
+}
+
+h2, h3, h4, h5 {
+    font-family: Abel;
 }
 
 img:hover {

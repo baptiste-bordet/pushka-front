@@ -13,11 +13,13 @@ const News = () => {
         <div className="news-wrapper">
             <Query query={NEWS_QUERY}>
                 {({ data: { newsItems }}) => {
-                    return newsItems.map(({ titre, description, lien_youtube, image }, index) => {
+                    return newsItems.reverse().map(({ titre, description, lien_youtube, image }, index) => {
                         return (
                             <div key={`news-${index}`} className="news-item">
-                                {image && <img src={image.url} alt={`news-pic-${index}`} />}
-                                {lien_youtube && <iframe id="ytplayer" title="ytplayer" type="text/html" src={parseYoutube(lien_youtube)} frameBorder="0" allowfullscreen="allowfullscreen"/>}
+                                <div className="media">
+                                    {image && <img src={image.url} alt={`news-pic-${index}`} />}
+                                    {lien_youtube && <iframe id="ytplayer" title="ytplayer" type="text/html" src={parseYoutube(lien_youtube)} frameBorder="0" allowfullscreen="allowfullscreen"/>}
+                                </div>
                                 <div className="news-text">
                                     <h2>{titre}</h2>
                                     <div className="news-description" dangerouslySetInnerHTML={{__html: handleTextLink(description)}} />

@@ -1,5 +1,5 @@
 .uk-nav-container:not(.uk-navbar-transparent) {
-  background: #333333;
+  background: #000000;
   color: #FFFFFF;
 }
 
@@ -9,7 +9,7 @@
   width: 100%;
 
   a {
-    font-family: "Cabin" !important;
+    font-family: "Abel" !important;
     font-size: 20px !important;
     color: #FFFFFF !important;
   }
@@ -17,6 +17,10 @@
 
   img {
     width: 100px;
+  }
+
+  .nav-logo {
+    display: none;
   }
 }
 
@@ -30,7 +34,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   .nav-menu {
     right: 0;
     left: auto !important;
@@ -116,6 +120,16 @@
       width: 0%;
       left: 50%;
     }
+  }
+}
+
+@media (max-width: 639px) {
+  .nav-logo {
+    display: block;
+  }
+
+  .nav-menu {
+    margin-right: 0!important;
   }
 }
 

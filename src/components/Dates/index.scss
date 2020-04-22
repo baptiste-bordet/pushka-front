@@ -32,13 +32,19 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     .date-wrapper {
         justify-content: center;
 
         .date {
             width: 80% !important;
         }
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1375px) {
+    .date-wrapper {
+        justify-content: center;
     }
 }
 
