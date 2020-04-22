@@ -59,7 +59,7 @@ const Galleries = () => {
         <div className="galleries-wrapper">
             <Query query={GALLERIES_QUERY}>
                 {({ data: { galleries }}) => {
-                    return galleries.map(({ titre, photos }, index) => {
+                    return galleries.length > 0 ? galleries.map(({ titre, photos }, index) => {
 
                         return (
                             <div key={`galleries-${index}`} className="gallerie-item">
@@ -82,7 +82,9 @@ const Galleries = () => {
                                 </ModalGateway>
                             </div>
                         )
-                    })
+                    }) : (
+                        <div className="date-empty">A venir...</div>
+                    )
                 }}
             </Query>
         </div>

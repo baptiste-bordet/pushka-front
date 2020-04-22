@@ -27,7 +27,7 @@ const Dates = () => {
         <div className="date-wrapper">
             <Query query={CONCERTS_QUERY}>
                 {({ data: { concerts }}) => {
-                    return concerts.map(({ date, nom, lieu, lien }, index) => {
+                    return concerts.length > 0 ? concerts.map(({ date, nom, lieu, lien }, index) => {
                         return (
                             <div key={`date-${index}`} className="date">
                                 <div className="date-date">
@@ -42,7 +42,9 @@ const Dates = () => {
                                 {lien && <div>{lien}</div>}
                             </div>
                         )
-                    })
+                    }) : (
+                        <div className="date-empty">A venir...</div>
+                    )
                 }}
             </Query>
         </div>

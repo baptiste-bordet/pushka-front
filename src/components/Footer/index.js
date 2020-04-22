@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faInstagram, faYoutube, faSpotify } from '@fortawesome/free-brands-svg-icons'
 import "./index.scss";
 
 import "./index.scss";
@@ -21,6 +21,16 @@ const Footer = () => {
             <div>
                 <a href="https://www.youtube.com/channel/UCsj1kFEbxZQTRqoTg5-HOHw" target="_blank">
                     <FontAwesomeIcon icon={faYoutube} size="2x" color="#FFFFFF"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://open.spotify.com/artist/1qZ8JvrCPmt7huk9dg6Ukn" target="_blank">
+                    <FontAwesomeIcon icon={faSpotify} size="2x" color="#FFFFFF"/>
+                </a>
+            </div>
+            <div className="deezer">
+                <a href="https://www.deezer.com/fr/artist/13476487" target="_blank">
+                    <img src="./deezer-icon.png" alt="logo deezer"/>
                 </a>
             </div>
         </div>

@@ -13,7 +13,7 @@ const News = () => {
         <div className="news-wrapper">
             <Query query={NEWS_QUERY}>
                 {({ data: { newsItems }}) => {
-                    return newsItems.reverse().map(({ titre, description, lien_youtube, image }, index) => {
+                    return newsItems.length > 0 ? newsItems.reverse().map(({ titre, description, lien_youtube, image }, index) => {
                         return (
                             <div key={`news-${index}`} className="news-item">
                                 <div className="media">
@@ -26,7 +26,9 @@ const News = () => {
                                 </div>
                             </div>
                         )
-                    })
+                    }) : (
+                        <div className="date-empty">A venir...</div>
+                    )
                 }}
             </Query>
         </div>
