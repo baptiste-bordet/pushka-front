@@ -34,3 +34,13 @@
         margin-top: 70px;
     }
 }
+
+@media (max-width: 639px) {
+    .section-wrapper {
+        padding-top: 0 !important;
+
+        h2 {
+            margin-top: 30px !important;
+        }
+    }
+}

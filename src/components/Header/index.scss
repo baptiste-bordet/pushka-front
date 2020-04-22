@@ -42,15 +42,19 @@
 }
 
 @media (max-width: 639px) {
-    .video-wrapper img {
-        top: 65vw;
-        width: 100px;
-        left: calc(50% - 50px);
+    .header{
+        margin-bottom: 160px;
+
+        .video-wrapper img {
+            top: 65vw;
+            width: 100px;
+            left: calc(50% - 50px);
+        }
     }
 }
 
 @media (min-width: 640px) and (max-width: 1375px) {
-    .video-wrapper img {
+    .header .video-wrapper img {
         top: 45vw;
         width: 100px;
         left: calc(50% - 50px);
