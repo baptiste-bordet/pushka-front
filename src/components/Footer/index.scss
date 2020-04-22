@@ -1,16 +1,35 @@
-.footer-wrapper {
+.footer-wrapper{
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 70px;
+    flex-direction: column;
 
-    a {
-        margin: 20px;
+    .media-wrapper {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 70px;
+
+        a {
+            margin: 20px;
+        }
+
+        .deezer {
+            width: 35px;
+        }
     }
 
-    .deezer {
-        width: 35px;
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .media-wrapper a {
+        margin: 10px;
     }
 }
 

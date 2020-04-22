@@ -9,8 +9,8 @@ const NavLinks = () => {
             <li><Link smooth to="#dates">Dates</Link></li>
             <li><Link smooth to="#news">News</Link></li>
             <li><Link smooth to="#photos">Photos</Link></li>
-            <li><Link smooth to="#photos">Vidéos</Link></li>
-            <li><Link smooth to="#photos">Contact</Link></li>
+            <li><Link smooth to="#videos">Vidéos</Link></li>
+            <li><Link smooth to="#contact">Contact</Link></li>
         </>
     )
 }
