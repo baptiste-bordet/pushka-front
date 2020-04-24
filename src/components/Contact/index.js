@@ -6,7 +6,7 @@ import "./index.scss";
 const Contact = () => {
     return (
         <div className="contact-wrapper">
-            Booking / Press : contact@pushka.live
+            Booking / Presse : contact@pushka.live
         </div>
     );
 };
