@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState } from "react";
 import "./index.scss";
 import NEWS_QUERY from "../../queries/news";
 import Query from "../Query";
@@ -25,12 +25,8 @@ const NewsItem = ({index, image, lien_youtube, titre, description}) => {
 
 const NewsList = ({ newsItems }) => {
     const MAX_ITEMS = 4;
-    const [newsArray, setNewsArray] = useState([]);
     const [displayAll, setDisplayAll] = useState(false);
-
-    useEffect(() => {
-        setNewsArray(newsItems.reverse());
-    }, []);
+    const newsArray = newsItems.reverse();
 
     return (
         <>

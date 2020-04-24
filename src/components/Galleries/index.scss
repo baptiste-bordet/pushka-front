@@ -1,11 +1,30 @@
 .galleries-wrapper {
     .gallerie-item {
 
+        padding: 0 10%;
+
         h3 {
             margin-left: 20px;
             color: #cccccc;
         }
+
+        .preview-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            img {
+                max-height: 200px;
+                margin: 2px;
+            }
+        }
     }
 }
 
+@media (max-width: 639px) {
+    .galleries-wrapper .gallerie-item {
+        padding: 0;
+    }
+}
 

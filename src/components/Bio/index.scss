@@ -1,0 +1,27 @@
+.bio-wrapper {
+    font-size: 22px;
+    padding: 0 20%;
+
+    .bio-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+}
+
+#bio {
+    background: url("/images/pushka_cover.jpg");
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+    background-position-y: center;
+    background-size: cover;
+    margin: 0;
+}
+
+@media (max-width: 639px) {
+    .bio-wrapper {
+        padding: 0 25px;
+    }
+}
+
+

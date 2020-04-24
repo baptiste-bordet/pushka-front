@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import Gallery from "react-photo-gallery";
+import React, { useState } from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import GALLERIES_QUERY from "../../queries/galleries";
@@ -8,47 +7,14 @@ import section from "../../containers/Section";
 
 import "./index.scss";
 
-const Preview = ({ photos, openLightbox }) => {
-    const [photoArray, setPhotoArray] = useState([]);
-
-    useEffect(() => {
-        const promises = photos.map(async (photo) => {
-            const result = { src: photo.url, width: 1, height: 1 };
-            const size = await getSize(photo.url);
-
-            result.width = size.width;
-            result.height = size.height;
-
-            return result;
-        });
-
-        Promise.all(promises).then((values) => {
-            setPhotoArray(values);
-        })
-    }, []);
-
-    const getSize = (src) => {
-        return new Promise((resolve, reject) => {
-            let img = new Image();
-            img.onload = () => resolve({ width: img.width, height: img.height });
-            img.onerror = reject;
-            img.src = src;
-        })
-    }
-
-    return (
-        <Gallery photos={photoArray} onClick={openLightbox} />
-    )
-}
-
 const Galleries = () => {
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(0);
 
-    const openLightbox = useCallback((event, { photo, index }) => {
+    const openLightbox = (index) => {
         setCurrentImage(index);
         setViewerIsOpen(true);
-    }, []);
+    };
 
     const closeLightbox = () => {
         setCurrentImage(0);
@@ -64,7 +30,11 @@ const Galleries = () => {
                         return (
                             <div key={`galleries-${index}`} className="gallerie-item">
                                 <h3>{titre}</h3>
-                                <Preview photos={photos} openLightbox={openLightbox} />
+                                <div className="preview-wrapper">
+                                    {photos.map((photo, index) => (
+                                        <img src={photo.url} alt={`gallerie ${index}`} onClick={() => openLightbox(index)} />
+                                    ))}
+                                </div>
                                 <ModalGateway>
                                     {viewerIsOpen ? (
                                         <Modal onClose={closeLightbox}>

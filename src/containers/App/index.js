@@ -4,6 +4,7 @@ import News from "../../components/News";
 import Dates from "../../components/Dates";
 import Galleries from "../../components/Galleries";
 import Videos from "../../components/Videos";
+import Bio from "../../components/Bio";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 
@@ -17,6 +18,7 @@ function App() {
             <News />
             <Galleries />
             <Videos />
+            <Bio />
             <Contact />
             <Footer />
         </div>

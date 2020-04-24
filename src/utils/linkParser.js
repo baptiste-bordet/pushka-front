@@ -29,7 +29,7 @@ const handleTextLink = (text) => {
         const link = elem.split('(')[1].split(')')[0];
         const display = elem.split('[')[1].split(']')[0];
 
-        return `<a target="_blank" href="${link}">${display}</a>`;
+        return `<a target="_blank" rel="noopener noreferrer" href="${link}">${display}</a>`;
     });
 }
 
