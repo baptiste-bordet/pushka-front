@@ -11,4 +11,4 @@ const Contact = () => {
     );
 };
 
-export default section(Contact, { id:"contact", title: "CONTACT", color: "#16181b" });
+export default section(Contact, { id:"contact", title: "CONTACT", color: "#212529" });
