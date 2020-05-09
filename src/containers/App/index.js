@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import News from "../../components/News";
 import Dates from "../../components/Dates";
@@ -8,13 +8,20 @@ import Bio from "../../components/Bio";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 
+import data from '../../data/data.yaml';
+
 import "./index.scss";
 
 function App() {
+
+    useEffect(() => {
+        console.log('data', data);
+    });
+
     return (
         <div className="App">
             <Header />
-            <Dates />
+            <Dates dates={data.dates}/>
             <News />
             <Galleries />
             <Videos />

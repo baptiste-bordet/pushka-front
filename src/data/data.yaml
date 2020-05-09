@@ -1,0 +1,33 @@
+dates:
+  - date: 30/05/2020
+    nom: bar Le Cercle des pandas
+    lieu: Notre-Dame-de-Sanilhac (24)
+    confine: true
+  - date: 25/06/2020
+    nom: Festival Solstice
+    lieu: Beaulieu-lès-Loches (37)
+    confine: true
+  - date: 16/07/2020
+    lieu: Carcans (33)
+    confine: true
+  - date: 18/07/2020
+    nom: Festival À Tout Bout d'Champ
+    lieu: Chantenay-Villedieu (72)
+    confine: true
+  - date: 25/07/2020
+    nom: Festival Rock'n Beer
+    lieu: Bretignolles-sur-Mer (85)
+    confine: true
+  - date: 29/08/2020
+    nom: Festival Solifestival
+    lieu: Thouars (79)
+    confine: true
+
+news:
+  - titre: Pushka au Festival À Tout Bout d'Champ !
+    contenu: Oh les gourmands, ils en redemandent !
+      Alors on se retrouve le 18/07 au Festival À Tout Bout d'Champ. On va vous régaler !!
+      Merci à l'orga et à tout le public présent pour l'ambiance de folie et le plébiscite !
+      Dédicace au Bar Des Sports de Brûlon pour le Ti Punch de la victoire.
+    image: pushka-tremplin.jpg
+
