@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import Header from "../../components/Header";
 import News from "../../components/News";
 import Dates from "../../components/Dates";
@@ -13,10 +13,6 @@ import data from '../../data/data.yaml';
 import "./index.scss";
 
 function App() {
-
-    useEffect(() => {
-        console.log('data', data);
-    });
 
     return (
         <div className="App">

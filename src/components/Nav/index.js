@@ -44,7 +44,7 @@ const Nav = () => {
                     <ul className="uk-navbar-nav uk-visible@s">
                         <NavLinks />
                     </ul>
-                    <a href="#" className="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav">
+                    <a href="#" className="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav">
                         <BurgerMenu />
                     </a>
                 </div>

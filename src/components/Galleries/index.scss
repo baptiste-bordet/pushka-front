@@ -1,7 +1,7 @@
 .galleries-wrapper {
     .gallerie-item {
 
-        padding: 0 10%;
+        padding: 20px 10%;
 
         h3 {
             margin-left: 20px;
@@ -11,8 +11,6 @@
         .preview-wrapper {
             display: flex;
             flex-wrap: wrap;
-
-            //justify-content: center;
 
             img {
                 max-height: 200px;
@@ -25,7 +23,7 @@
 
 @media (max-width: 639px) {
     .galleries-wrapper .gallerie-item {
-        padding: 0;
+        padding: 20px 0;
 
         .preview-wrapper {
             justify-content: center;

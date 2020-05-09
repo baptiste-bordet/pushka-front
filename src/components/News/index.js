@@ -32,7 +32,7 @@ const NewsList = ({ newsItems }) => {
                 <>
                     <div className="news-wrapper">
                         {newsArray.slice(0, displayAll ? newsArray.length : MAX_ITEMS).map((item, index) => (
-                            <NewsItem index={index} {...item} />
+                            <NewsItem index={index} {...item} key={`news-${index}`} />
                         ))}
                     </div>
                     {newsArray.length > MAX_ITEMS && (

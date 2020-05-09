@@ -5,7 +5,7 @@ import section from "../../containers/Section";
 
 import "./index.scss";
 
-const Galleries = ({ galleries }) => {
+const Gallery = ({gallerie: { titre, lien, nb }}, index) => {
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(0);
 
@@ -24,34 +24,39 @@ const Galleries = ({ galleries }) => {
     }
 
     return (
+        <div key={`galleries-${index}`} className="gallerie-item">
+            <h3>{titre}</h3>
+            <div className="preview-wrapper">
+                {getLinks(lien, nb).map((photo, i) => (
+                    <img src={photo.url} alt={`gallerie ${index}`} onClick={() => openLightbox(i)} key={`img-${i}`} />
+                ))}
+            </div>
+            <ModalGateway>
+                {viewerIsOpen ? (
+                    <Modal onClose={closeLightbox}>
+                        <Carousel
+                            currentIndex={currentImage}
+                            views={getLinks(lien, nb).map(photo => ({
+                                ...photo,
+                                src: photo.url,
+                                srcset: photo.srcSet,
+                                caption: ''
+                            }))}
+                        />
+                    </Modal>
+                ) : null}
+            </ModalGateway>
+        </div>
+    );
+};
+
+
+const Galleries = ({ galleries }) => {
+    return (
         <div className="galleries-wrapper">
-            {galleries.length > 0 ? galleries.map(({ titre, lien, nb }, index) => {
-                return (
-                    <div key={`galleries-${index}`} className="gallerie-item">
-                        <h3>{titre}</h3>
-                        <div className="preview-wrapper">
-                            {getLinks(lien, nb).map((photo, index) => (
-                                <img src={photo.url} alt={`gallerie ${index}`} onClick={() => openLightbox(index)} />
-                            ))}
-                        </div>
-                        <ModalGateway>
-                            {viewerIsOpen ? (
-                                <Modal onClose={closeLightbox}>
-                                    <Carousel
-                                        currentIndex={currentImage}
-                                        views={getLinks(lien, nb).map(photo => ({
-                                            ...photo,
-                                            src: photo.url,
-                                            srcset: photo.srcSet,
-                                            caption: ''
-                                        }))}
-                                    />
-                                </Modal>
-                            ) : null}
-                        </ModalGateway>
-                    </div>
-                )
-            }) : (
+            {galleries.length > 0 ? galleries.map((gallerie, index) => (
+                <Gallery gallerie={gallerie} index={index}  key={`gallery-${index}`}/>
+            )) : (
                 <div className="date-empty">A venir...</div>
             )}
         </div>
