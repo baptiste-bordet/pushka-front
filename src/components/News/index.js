@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import "./index.scss";
-import NEWS_QUERY from "../../queries/news";
-import Query from "../Query";
 
 import {handleTextLink, parseYoutube} from '../../utils/linkParser';
 import section from "../../containers/Section";
 
-const NewsItem = ({index, image, lien_youtube, titre, description}) => {
+const NewsItem = ({index, image, lienYoutube, titre, description}) => {
     return (
         <div key={`news-${index}`} className="news-item">
             <div className="media">
-                {image && <img src={image.url} alt={`news-pic-${index}`}/>}
-                {lien_youtube &&
-                <iframe id="ytplayer" title="ytplayer" type="text/html" src={parseYoutube(lien_youtube)} frameBorder="0"
+                {image && <img src={image} alt={`news-pic-${index}`}/>}
+                {lienYoutube &&
+                <iframe id="ytplayer" title="ytplayer" type="text/html" src={parseYoutube(lienYoutube)} frameBorder="0"
                         allowFullScreen="allowfullscreen"/>}
             </div>
             <div className="news-text">
@@ -50,11 +48,9 @@ const NewsList = ({ newsItems }) => {
     );
 };
 
-const NewsWrapper = () => {
+const NewsWrapper = ({ news }) => {
     return (
-        <Query query={NEWS_QUERY}>
-            {({data: { newsItems }}) => <NewsList newsItems={newsItems}/>}
-        </Query>
+        <NewsList newsItems={news.reverse()}/>
     );
 };
 

@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./index.scss";
-import CONCERTS_QUERY from "../../queries/concerts";
-import Query from "../Query";
 
 import section from "../../containers/Section";
 
 import "./index.scss";
-import data from "../../data/data.yaml";
 
 const MONTHS = [
     'janvier',
@@ -26,7 +23,7 @@ const MONTHS = [
 const Dates = ({ dates }) => {
     return (
         <div className="date-wrapper">
-            {dates.length > 0 ? dates.map(({ date, nom, lieu, lien }, index) => {
+            {dates.length > 0 ? dates.map(({ date, nom, lieu, lien, covide }, index) => {
                     return (
                         <div key={`date-${index}`} className="date">
                             <div className="date-date">
@@ -39,6 +36,7 @@ const Dates = ({ dates }) => {
                             {nom && <div className="nom">{nom}</div>}
                             {lieu && <div>{lieu}</div>}
                             {lien && <div>{lien}</div>}
+                            {covide && <div className="covide">COVIDÉ</div>}
                         </div>
                     )
                 }) : (

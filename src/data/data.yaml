@@ -2,32 +2,70 @@ dates:
   - date: 30/05/2020
     nom: bar Le Cercle des pandas
     lieu: Notre-Dame-de-Sanilhac (24)
-    confine: true
+    covide: true
   - date: 25/06/2020
     nom: Festival Solstice
     lieu: Beaulieu-lès-Loches (37)
-    confine: true
+    covide: true
   - date: 16/07/2020
     lieu: Carcans (33)
-    confine: true
+    covide: true
   - date: 18/07/2020
     nom: Festival À Tout Bout d'Champ
     lieu: Chantenay-Villedieu (72)
-    confine: true
+    covide: true
   - date: 25/07/2020
     nom: Festival Rock'n Beer
     lieu: Bretignolles-sur-Mer (85)
-    confine: true
+    covide: false
   - date: 29/08/2020
     nom: Festival Solifestival
     lieu: Thouars (79)
-    confine: true
+    covide: true
 
 news:
+  - titre: Pushka confiné
+    description: "Pendant qu'on confine, Pushka compose.\n
+      A ce rythme là, on vous sort un coffret 10 CDs dans l'année !\n
+      On est bouillant, on espère pouvoir vous balancer tout ça en live très vite  !"
+    image: https://pushka-content.s3.eu-west-3.amazonaws.com/confine.jpg
   - titre: Pushka au Festival À Tout Bout d'Champ !
-    contenu: Oh les gourmands, ils en redemandent !
-      Alors on se retrouve le 18/07 au Festival À Tout Bout d'Champ. On va vous régaler !!
-      Merci à l'orga et à tout le public présent pour l'ambiance de folie et le plébiscite !
-      Dédicace au Bar Des Sports de Brûlon pour le Ti Punch de la victoire.
-    image: pushka-tremplin.jpg
+    description: "Oh les gourmands, ils en redemandent !\n
+      Alors on se retrouve le 18/07 au Festival À Tout Bout d'Champ. On va vous régaler !!\n
+      Merci à l'orga et à tout le public présent pour l'ambiance de folie et le plébiscite !\n
+      Dédicace au Bar Des Sports de Brûlon pour le Ti Punch de la victoire."
+    image: https://pushka-content.s3.eu-west-3.amazonaws.com/pushka_cover.jpg
+  - titre: Danse - festival Yzeures'n'Rock
+    description: "Danse - Pushka au festival Festival - Yzeures'n'Rock - 03/08/2019\n\n
+      Crédit Vidéo:\n
+      [https://www.jeanbaptistebarbier.com](https://www.jeanbaptistebarbier.com)\n
+      [https://www.maxlhvideos.com/](https://www.maxlhvideos.com/)"
+    lienYoutube: https://youtu.be/ewBqy4Rm4mw
+  - titre: Tremplin du Festival À Tout Bout d'Champ
+    description: "Check ça, Pushka commence l'année avec un fat concert au tremplin du Festival À Tout Bout d'Champ, le 22 Février !\n
+      Si tu viens, tu vas kiffer !!! Et si tu votes pour nous, tu vas sur-kiffer car tu pourras peut-être nous voir au festival \"A Tout Bout d'Champ\", tranquille, au chaud, cet été !\n
+      Restez connecté, d'autres dates vont tomber !"
+    image: https://pushka-content.s3.eu-west-3.amazonaws.com/pushka-tremplin.jpg
+
+galleries:
+  - titre: Yzeure
+    lien: https://pushka-content.s3.eu-west-3.amazonaws.com/galleries/yzeure/
+    nb: 12
+
+videos:
+  - titre: DUEL - Pushka @ Yzeures'n'rock
+    lien: https://youtu.be/cCSpE2Z3Z48
+  - titre: JANVIER - Pushka @ Yzeures'n'rock
+    lien: https://youtu.be/ZHq-6pIAJEI
+  - titre: PARAPET - Pushka @ Yzeures'n'rock
+    lien: https://youtu.be/upW6TXrWilE
+  - titre: PUSHKA - LA PLUME (Clip)
+    lien: https://youtu.be/_OwdU7SpISo
+
+bio:
+  description: Pushka, c’est pas vraiment du rap, c’est pas vraiment du ska, c’est pas non plus vraiment du Hip Hop. En tous cas, c'est servi par six musiciens passionnés, aux origines musicales différentes mais complémentaires et qui ont de l'énergie à revendre ! Des mélodies entraînantes, un groove particulier, des textes rappés et chantés, transportés par un clavier, un accordéon, une trompette, une basse et une batterie.
+
+
+
+
 

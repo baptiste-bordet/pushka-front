@@ -22,10 +22,10 @@ function App() {
         <div className="App">
             <Header />
             <Dates dates={data.dates}/>
-            <News />
-            <Galleries />
-            <Videos />
-            <Bio />
+            <News news={data.news}/>
+            <Galleries galleries={data.galleries} />
+            <Videos videos={data.videos}/>
+            <Bio bio={data.bio} />
             <Contact />
             <Footer />
         </div>
