@@ -2,6 +2,10 @@
     font-size: 22px;
     padding: 0 20%;
 
+    .description {
+        white-space: pre-line;
+    }
+
     .bio-members {
         display: flex;
         flex-direction: column;
