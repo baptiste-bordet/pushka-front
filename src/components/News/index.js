@@ -3,12 +3,19 @@ import "./index.scss";
 
 import {handleTextLink, parseYoutube} from '../../utils/linkParser';
 import section from "../../containers/Section";
+import SkeletonImage from "../SkeletonImage";
+import LazyLoadImage from "../LazyLoadImage/LazyLoadImage";
 
 const NewsItem = ({index, image, lienYoutube, titre, description}) => {
     return (
         <div key={`news-${index}`} className="news-item">
             <div className="media">
-                {image && <img src={image} alt={`news-pic-${index}`}/>}
+                {image &&
+                    <LazyLoadImage
+                        url={image}
+                        alt={`news image ${index}`}
+                        placeholder={<SkeletonImage />} />
+                }
                 {lienYoutube &&
                 <iframe id="ytplayer" title="ytplayer" type="text/html" src={parseYoutube(lienYoutube)} frameBorder="0"
                         allowFullScreen="allowfullscreen"/>}

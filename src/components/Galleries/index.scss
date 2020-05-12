@@ -12,6 +12,12 @@
             display: flex;
             flex-wrap: wrap;
 
+            .skeleton-image {
+                height: 200px;
+                width: 200px;
+                background: #868e96;
+            }
+
             img {
                 max-height: 200px;
                 margin: 2px;
@@ -28,8 +34,9 @@
         .preview-wrapper {
             justify-content: center;
 
-            img {
+            div {
                 width: 48%;
+                margin: 2px;
                 max-height: none;
             }
         }

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
+import SkeletonImage from "../SkeletonImage";
 import section from "../../containers/Section";
 
 import "./index.scss";
+import LazyLoadImage from "../LazyLoadImage/LazyLoadImage";
 
 const Gallery = ({gallerie: { titre, lien, nb }}, index) => {
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -28,7 +30,11 @@ const Gallery = ({gallerie: { titre, lien, nb }}, index) => {
             <h3>{titre}</h3>
             <div className="preview-wrapper">
                 {getLinks(lien, nb).map((photo, i) => (
-                    <img src={photo.url} alt={`gallerie ${index}`} onClick={() => openLightbox(i)} key={`img-${i}`} />
+                    <LazyLoadImage
+                        url={photo.url}
+                        alt={`gallerie ${index}`}
+                        placeholder={<SkeletonImage />}
+                        onClick={() => openLightbox(i)} key={`img-${i}`} />
                 ))}
             </div>
             <ModalGateway>
