@@ -4,6 +4,7 @@ import "./index.scss";
 import Nav from '../Nav'
 
 const Header = () => {
+
     return (
         <div className="header">
             {/*<img src={`${process.env.REACT_APP_BACKEND_URL}${banner.image.url}`} alt="banner-pic" />*/}
@@ -18,7 +19,7 @@ const Header = () => {
                 {/*></iframe>*/}
                 {/*<img className={`fallback-banner ${displayFallback && "display-fallback"}`} src="/pushka_cover.jpg" alt="image cover"/>*/}
 
-                <video autoPlay id="my-video" className="video fullscreen-bg__video"  muted loop>
+                <video autoPlay muted loop playsInline id="banner-video" className="video fullscreen-bg__video">
                     <source src="/videos/pushka-cover-2.mp4" type="video/mp4" />
                     <img src="/images/pushka_cover.jpg" alt="banner cover" />
                 </video>

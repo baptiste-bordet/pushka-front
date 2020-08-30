@@ -10,18 +10,18 @@ dates:
   - date: 16/07/2020
     lieu: Carcans (33)
     covide: true
-  - date: 18/07/2020
-    nom: Festival À Tout Bout d'Champ
-    lieu: Chantenay-Villedieu (72)
-    covide: true
   - date: 25/07/2020
     nom: Festival Rock'n Beer
     lieu: Bretignolles-sur-Mer (85)
-    covide: false
+    covide: true
   - date: 29/08/2020
     nom: Festival Solifestival
     lieu: Thouars (79)
     covide: true
+  - date: 17/07/2021
+    nom: Festival À Tout Bout d'Champ
+    lieu: Chantenay-Villedieu (72)
+    covide: false
 
 news:
   - titre: Pushka confiné
