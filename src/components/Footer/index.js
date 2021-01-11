@@ -35,7 +35,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div className="copyright">© Pushka - 2020</div>
+            <div className="copyright">© Pushka - 2021</div>
         </div>
     );
 };

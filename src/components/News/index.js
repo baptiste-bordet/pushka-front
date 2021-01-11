@@ -57,7 +57,11 @@ const NewsList = ({ newsItems }) => {
 
 const NewsWrapper = ({ news }) => {
     return (
+      <>
+        <p className="main-news">Comme tous les groupes de musique ce que nous aimons c’est exporter nos productions, partager nos créations. Nous dégageons notre énergie en live ! Cette période de restriction nous met donc dans une situation d’emmagasinement d’énergie explosive à revendre ; nous sommes boostés comme jamais !
+          Mais pour cela nous avons besoin de salles ou de festivals nous permettant de jouer ! Alors si notre musique vous plaît n’hésitez donc pas à nous contacter, vous ne le regretterez très probablement pas !</p>
         <NewsList newsItems={news.reverse()}/>
+      </>
     );
 };
 

@@ -1,0 +1,22 @@
+.audio-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.audio-item {
+    margin: 30px;
+}
+
+.audio-item h3 {
+    color: #cccccc;
+}
+
+//@media (max-width: 639px) {
+//    .bio-wrapper {
+//        padding: 0 25px;
+//    }
+//}
+
+

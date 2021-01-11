@@ -69,4 +69,4 @@ const Galleries = ({ galleries }) => {
     );
 };
 
-export default section(Galleries, { id:"photos", title: "PHOTOS", color: "#16181b" });
+export default section(Galleries, { id:"photos", title: "PHOTOS", color: "#212529" });

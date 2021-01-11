@@ -11,6 +11,7 @@ import Footer from "../../components/Footer";
 import data from '../../data/data.yaml';
 
 import "./index.scss";
+import Audio from "../../components/Audio";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Header />
             <Dates dates={data.dates}/>
             <News news={data.news}/>
+            <Audio audio={data.audio}/>
             <Galleries galleries={data.galleries} />
             <Videos videos={data.videos}/>
             <Bio bio={data.bio} />

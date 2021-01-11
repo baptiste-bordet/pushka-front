@@ -69,3 +69,11 @@ bio:
   description: "Tu en marre du rap au vocodeur avec peu de fond ? Tu en as marre du ska festif en majeur et de la chanson française un peu molle ? Tu en as marre du jazz et de son intellectualisation musicale ? Tu en as marre du rock et de son rythme binaire ? Et globalement tu en as marre de la guitare ?\n\n
     Viens donc t’essayer à Pushka ! On a essayé de mélanger tout ça ! Tu trouveras du rap à peu près sensé qui te donnera envie de pogoter, du ska aux influences latino-américaines, du jazz envolé à base de rythmiques hiphop et peut-être même du punk sans guitare électrique si l’ambiance nous pousse à vraiment s’énerver !\n\n
     Tu l’auras compris, un groupe avec de l’énergie à revendre, et qu’il est bon à voir en live mais également à écouter chez soi en famille !"
+
+audio:
+  - title: Saisons
+    file: /audio/Saisons.mp3
+  - title: Duel
+    file: /audio/Duel.mp3
+  - title: Danse
+    file: /audio/Danse.mp3

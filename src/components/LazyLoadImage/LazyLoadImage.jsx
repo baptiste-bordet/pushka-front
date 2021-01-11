@@ -30,7 +30,7 @@ const LazyLoadImage = ({ className, url, alt, placeholder = null, forcePreloadIm
                 setLoaded(true);
             };
         }
-    }, [inView]);
+    }, [inView, url]);
 
     return (
         <div ref={elementRef} className={className ? `${className}-wrapper` : null}>

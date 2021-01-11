@@ -24,4 +24,4 @@ const Videos = ({ videos }) => {
     );
 };
 
-export default section(Videos, {id: "videos", title: "VIDEOS", color: "#212529"});
+export default section(Videos, {id: "videos", title: "VIDEOS", color: "#16181b"});

@@ -1,3 +1,9 @@
+.main-news {
+    padding: 0 20%;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
 .news-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +54,10 @@
 }
 
 @media (max-width: 639px) {
+    .main-news {
+        padding: 20px;
+    }
+
     .news-wrapper {
         padding: 0;
 
