@@ -23,7 +23,7 @@ const MONTHS = [
 const Dates = ({ dates }) => {
     return (
         <div className="date-wrapper">
-            {dates.length > 0 ? dates.map(({ date, nom, lieu, lien, covide }, index) => {
+            {dates.length > 0 ? dates.reverse().map(({ date, nom, lieu, lien, covide }, index) => {
                     return (
                         <div key={`date-${index}`} className="date">
                             <div className="date-date">
