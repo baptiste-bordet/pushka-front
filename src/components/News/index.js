@@ -31,7 +31,7 @@ const NewsItem = ({index, image, lienYoutube, titre, description}) => {
 const NewsList = ({ newsItems }) => {
     const MAX_ITEMS = 4;
     const [displayAll, setDisplayAll] = useState(false);
-    const newsArray = newsItems.reverse();
+    const newsArray = [...newsItems].reverse();
 
     return (
         <>
@@ -43,9 +43,9 @@ const NewsList = ({ newsItems }) => {
                         ))}
                     </div>
                     {newsArray.length > MAX_ITEMS && (
-                        <div className="display-all" onClick={() => setDisplayAll(!displayAll)}>
+                        <span className="display-all" role="button" onClick={() => setDisplayAll(!displayAll)}>
                             { displayAll ? "Afficher moins" : "Afficher tout" }
-                        </div>
+                        </span>
                     )}
                 </>
             ) : (

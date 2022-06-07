@@ -53,6 +53,10 @@
     font-weight: 800;
 }
 
+.display-all:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 639px) {
     .main-news {
         padding: 20px;

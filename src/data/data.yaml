@@ -1,33 +1,39 @@
 dates:
-  - date: 30/05/2020
-    nom: bar Le Cercle des pandas
-    lieu: Notre-Dame-de-Sanilhac (24)
-    covide: true
-  - date: 25/06/2020
-    nom: Festival Solstice
+#  - date: 30/05/2020
+#    nom: bar Le Cercle des pandas
+#    lieu: Notre-Dame-de-Sanilhac (24)
+#    covide: true
+#  - date: 25/06/2020
+#    nom: Festival Solstice
+#    lieu: Beaulieu-lès-Loches (37)
+#    covide: true
+#  - date: 16/07/2020
+#    lieu: Carcans (33)
+#    covide: true
+#  - date: 25/07/2020
+#    nom: Festival Rock'n Beer
+#    lieu: Bretignolles-sur-Mer (85)
+#    covide: true
+#  - date: 29/08/2020
+#    nom: Festival Solifestival
+#    lieu: Thouars (79)
+#    covide: true
+#  - date: 17/07/2021
+#    nom: Festival À Tout Bout d'Champ
+#    lieu: Chantenay-Villedieu (72)
+#    covide: true
+#  - date: 11/09/2021
+#    nom: Festival Laver'Night
+#    lieu: Lavernat (72)
+#    covide: false
+  - date: 24/06/2022
+    nom: Festival Solstice de Beaulieu
     lieu: Beaulieu-lès-Loches (37)
-    covide: true
-  - date: 16/07/2020
-    lieu: Carcans (33)
-    covide: true
-  - date: 25/07/2020
-    nom: Festival Rock'n Beer
-    lieu: Bretignolles-sur-Mer (85)
-    covide: true
-  - date: 29/08/2020
-    nom: Festival Solifestival
-    lieu: Thouars (79)
-    covide: true
-  - date: 17/07/2021
-    nom: Festival À Tout Bout d'Champ
-    lieu: Chantenay-Villedieu (72)
-    covide: true
-  - date: 11/09/2021
-    nom: Festival Laver'Night
-    lieu: Lavernat (72)
-    covide: false
 
 news:
+  - titre: Laver'Night
+    description: "On était de passage à Lavernat le 11 septembre pour la 1er édition du festival Laver'Night, un vrai plaisir de vous retrouver et de faire la fête ensemble, vivement la suite !"
+    image: https://pushka-content.s3.eu-west-3.amazonaws.com/lavernat.jpeg
   - titre: Pushka confiné
     description: "Pendant qu'on confine, Pushka compose.\n
       A ce rythme là, on vous sort un coffret 10 CDs dans l'année !\n
@@ -52,6 +58,9 @@ news:
     image: https://pushka-content.s3.eu-west-3.amazonaws.com/pushka-tremplin.jpg
 
 galleries:
+  - titre: Laver'Night
+    lien: https://pushka-content.s3.eu-west-3.amazonaws.com/galleries/lavernight/
+    nb: 8
   - titre: Yzeure
     lien: https://pushka-content.s3.eu-west-3.amazonaws.com/galleries/yzeure/
     nb: 12
