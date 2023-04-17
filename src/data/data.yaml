@@ -26,9 +26,12 @@ dates:
 #    nom: Festival Laver'Night
 #    lieu: Lavernat (72)
 #    covide: false
-  - date: 24/06/2022
-    nom: Festival Solstice de Beaulieu
-    lieu: Beaulieu-lès-Loches (37)
+  - date: 30/09/2023
+    nom: Guinguette Le Lavoir
+    lieu: Preuilly-sur-Claise (37)
+  - date: 29/07/2023
+    nom: Heinzfest
+    lieu: Mayenne (53)
 
 news:
   - titre: Laver'Night
@@ -58,6 +61,12 @@ news:
     image: https://pushka-content.s3.eu-west-3.amazonaws.com/pushka-tremplin.jpg
 
 galleries:
+  - titre: Enregistrement EP n°2
+    lien: https://pushka-content.s3.eu-west-3.amazonaws.com/galleries/enregistrement_ep_2/
+    nb: 13
+  - titre: La Dame de Canton - janvier 2023
+    lien: https://pushka-content.s3.eu-west-3.amazonaws.com/galleries/ddc_2023/
+    nb: 10
   - titre: Laver'Night
     lien: https://pushka-content.s3.eu-west-3.amazonaws.com/galleries/lavernight/
     nb: 8
