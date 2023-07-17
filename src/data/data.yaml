@@ -34,6 +34,9 @@ dates:
     lieu: Mayenne (53)
 
 news:
+  - titre: Le nouvel EP est là !
+    description: "'Assez' est sortie ! 100% auto-produit : c'est la garantie d'un EP tout à fait schizophrène Jazzy, hip-hoppy, variety, rappy..."
+    image: https://pushka-content.s3.eu-west-3.amazonaws.com/Assez.jpg
   - titre: Laver'Night
     description: "On était de passage à Lavernat le 11 septembre pour la 1er édition du festival Laver'Night, un vrai plaisir de vous retrouver et de faire la fête ensemble, vivement la suite !"
     image: https://pushka-content.s3.eu-west-3.amazonaws.com/lavernat.jpeg
@@ -93,6 +96,10 @@ bio:
     Tu l’auras compris, un groupe avec de l’énergie à revendre, et qu’il est bon à voir en live mais également à écouter chez soi en famille !"
 
 audio:
+  - title: La Fête
+    file: /audio/La Fête.mp3
+  - title: Une Âme
+    file: /audio/Une Âme.mp3
   - title: Saisons
     file: /audio/Saisons.mp3
   - title: Duel
