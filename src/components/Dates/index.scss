@@ -1,77 +1,92 @@
 #dates {
-    margin: 0 15%;
+  margin: 0 15%;
+
+  .past-title {
+    color: #868e96;
+    font-size: 2rem;
+  }
+
+  .display-more {
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 500px;
+    padding: 5px 15px;
+
+    &:hover {
+      cursor: pointer;
+      background: #333;
+    }
+  }
 }
 
 .date-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 
-    .date {
-        border: 1px solid #333;
-        padding: 20px;
-        margin: 10px;
-        width: 20%;
-        position: relative;
-        overflow: hidden;
+  .date {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
 
-        .date-date {
-            display: flex;
+    .date-date {
+      display: flex;
 
-            .day {
-                font-size: 52px;
-                padding-right: 5px;
-            }
+      .day {
+        font-size: 52px;
+        padding-right: 5px;
+      }
 
-            .date-rest {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                font-weight: 800;
-            }
-
-        }
-
-        .nom {
-            font-size: 20px;
-            font-weight: 800;
-        }
-
-        .covide {
-            position: absolute;
-            top: 20px;
-            right: -80px;
-            padding: 10px 100px;
-            background: #ff1a1a;
-            font-size: 20px;
-            font-weight: 800;
-            transform: rotate(45deg);
-        }
+      .date-rest {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 800;
+      }
     }
+
+    .nom {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .covide {
+      position: absolute;
+      top: 20px;
+      right: -80px;
+      padding: 10px 100px;
+      background: #ff1a1a;
+      font-size: 20px;
+      font-weight: 800;
+      transform: rotate(45deg);
+    }
+  }
 }
 
 @media (max-width: 640px) {
-    #dates {
-        margin: 0;
-    }
+  #dates {
+    margin: 0;
+  }
 
-    .date-wrapper {
-        justify-content: center;
+  .date-wrapper {
+    justify-content: center;
 
-        .date {
-            width: 80% !important;
-        }
+    .date {
+      width: 80% !important;
     }
+  }
 }
 
 @media (min-width: 640px) and (max-width: 1375px) {
-    #dates {
-        margin: 0;
-    }
+  #dates {
+    margin: 0;
+  }
 
-    .date-wrapper {
-        justify-content: center;
-    }
+  .date-wrapper {
+    justify-content: center;
+  }
 }
-

@@ -1,14 +1,10 @@
-import React from 'react';
-import section from "../../containers/Section";
+import React from 'react'
+import section from '../../containers/Section'
 
-import "./index.scss";
+import './index.scss'
 
 const Contact = () => {
-    return (
-        <div className="contact-wrapper">
-            Booking / Presse : contact@pushka.live
-        </div>
-    );
-};
+  return <div className="contact-wrapper">Booking / Presse : contact@pushka.live</div>
+}
 
-export default section(Contact, { id:"contact", title: "CONTACT", color: "#212529" });
+export default section(Contact, { id: 'contact', title: 'CONTACT', color: '#212529' })

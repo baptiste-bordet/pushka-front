@@ -1,87 +1,87 @@
 .main-news {
-    padding: 0 20%;
-    font-size: 18px;
-    margin-bottom: 40px;
+  padding: 0 20%;
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .news-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    //justify-content: center;
-    padding: 0 20%;
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: center;
+  padding: 0 20%;
 
-    .news-item {
-        width: 45%;
-        margin: 20px;
+  .news-item {
+    width: 45%;
+    margin: 20px;
 
-        //border: 1px solid #343A40;
+    //border: 1px solid #343A40;
 
-        .media {
+    .media {
 
-            width: 100%;
-            //height: 63%;
+      width: 100%;
+      //height: 63%;
 
-            img,
-            iframe {
-                height: inherit;
-                width: 100%;
-            }
+      img,
+      iframe {
+        height: inherit;
+        width: 100%;
+      }
 
-            iframe {
-                //width: 100%;
-                height: 300px;
-            }
-        }
-
-        .news-text {
-            padding: 20px;
-
-            h2 {
-                color: #868e96;
-            }
-
-            .news-description {
-                white-space: pre-line;
-                color: #dee2e6;
-            }
-        }
+      iframe {
+        //width: 100%;
+        height: 300px;
+      }
     }
+
+    .news-text {
+      padding: 20px;
+
+      h2 {
+        color: #868e96;
+      }
+
+      .news-description {
+        white-space: pre-line;
+        color: #dee2e6;
+      }
+    }
+  }
 }
 
 .display-all {
-    font-size: 20px;
-    font-weight: 800;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .display-all:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 639px) {
-    .main-news {
-        padding: 20px;
-    }
+  .main-news {
+    padding: 20px;
+  }
 
-    .news-wrapper {
-        padding: 0;
+  .news-wrapper {
+    padding: 0;
 
-        .news-item {
-            width: 100% !important;
-        }
+    .news-item {
+      width: 100% !important;
     }
+  }
 
-    .uk-nav-container:not(.uk-navbar-transparent) {
-        background: none;
-    }
+  .uk-nav-container:not(.uk-navbar-transparent) {
+    background: none;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 1375px) {
-    .news-wrapper {
-        padding: 0;
+  .news-wrapper {
+    padding: 0;
 
-        //.news-item {
-        //    width: 100% !important;
-        //}
-    }
+    //.news-item {
+    //    width: 100% !important;
+    //}
+  }
 }
 

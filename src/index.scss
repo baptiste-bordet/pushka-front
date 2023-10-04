@@ -1,35 +1,36 @@
 @font-face {
-    font-family: 'PermanentMarker';
-    src: url('/fonts/PermanentMarker-Regular.ttf') format('truetype');
+  font-family: 'PermanentMarker';
+  src: url('/fonts/PermanentMarker-Regular.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Abel';
-    src: url('/fonts/Abel-Regular.ttf') format('truetype');
+  font-family: 'Abel';
+  src: url('/fonts/Abel-Regular.ttf') format('truetype');
 }
 
 body {
-    background: #16181b;
-    color: #e4e6eb;
-    font-family: Abel;
-    padding-bottom: 30px;
+  background: #16181b;
+  color: #e4e6eb;
+  font-family: Abel;
+  padding-bottom: 30px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    font-family: Staatliches;
-    font-size: 120px;
+  font-family: Staatliches;
+  font-size: 120px;
 }
 
 h2, h3, h4, h5 {
-    font-family: Abel;
+  font-family: Abel;
 }
 
 img:hover {
-    opacity: 1;
-    transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 

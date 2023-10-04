@@ -1,16 +1,16 @@
 .audio-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .audio-item {
-    margin: 30px;
+  margin: 30px;
 }
 
 .audio-item h3 {
-    color: #cccccc;
+  color: #cccccc;
 }
 
 //@media (max-width: 639px) {
@@ -18,5 +18,3 @@
 //        padding: 0 25px;
 //    }
 //}
-
-

@@ -1,31 +1,65 @@
 dates:
-#  - date: 30/05/2020
-#    nom: bar Le Cercle des pandas
-#    lieu: Notre-Dame-de-Sanilhac (24)
-#    covide: true
-#  - date: 25/06/2020
-#    nom: Festival Solstice
-#    lieu: Beaulieu-lès-Loches (37)
-#    covide: true
-#  - date: 16/07/2020
-#    lieu: Carcans (33)
-#    covide: true
-#  - date: 25/07/2020
-#    nom: Festival Rock'n Beer
-#    lieu: Bretignolles-sur-Mer (85)
-#    covide: true
-#  - date: 29/08/2020
-#    nom: Festival Solifestival
-#    lieu: Thouars (79)
-#    covide: true
-#  - date: 17/07/2021
-#    nom: Festival À Tout Bout d'Champ
-#    lieu: Chantenay-Villedieu (72)
-#    covide: true
-#  - date: 11/09/2021
-#    nom: Festival Laver'Night
-#    lieu: Lavernat (72)
-#    covide: false
+  - date: 20/10/2010
+    nom: Scène Michelet
+    lieu: Nantes (44)
+  - date: 11/02/2011
+    nom: Nuit Véto
+    lieu: Nantes (44)
+  - date: 11/10/2011
+    nom: Polytech By Night
+    lieu: Nantes (44)
+  - date: 19/01/2012
+    nom: Scène Michelet
+    lieu: Nantes (44)
+  - date: 13/10/2012
+    nom: Polytech By Night
+    lieu: Nantes (44)
+  - date: 10/09/2016
+    nom: Festival Con'Brailleurs
+    lieu: Saint-Gervais-d'Auvergne (63)
+  - date: 10/09/2016
+    nom: Festival 33 Tours
+    lieu: Avrillé-les-Ponceaux (37)
+  - date: 25/11/2017
+    nom: Dame de Canton
+    lieu: Paris (75)
+  - date: 16/06/2018
+    nom: Tremplin Festival Yzeures'N'Rock
+    lieu: Yzeures sur Creuse (37)
+  - date: 13/07/2019
+    nom: Bô-Bar
+    lieu: Loches (37)
+  - date: 03/08/2019
+    nom: Festival Yzeures'N'Rock
+    lieu: Yzeures sur Creuse (37)
+  - date: 30/05/2020
+    nom: Bar Le Cercle des pandas
+    lieu: Notre-Dame-de-Sanilhac (24)
+    covide: true
+  - date: 16/07/2020
+    lieu: Carcans (33)
+    covide: true
+  - date: 25/07/2020
+    nom: Festival Rock'n Beer
+    lieu: Bretignolles-sur-Mer (85)
+    covide: true
+  - date: 29/08/2020
+    nom: Festival Solifestival
+    lieu: Thouars (79)
+    covide: true
+  - date: 17/07/2021
+    nom: Festival À Tout Bout d'Champ
+    lieu: Chantenay-Villedieu (72)
+    covide: true
+  - date: 11/09/2021
+    nom: Festival Laver'Night
+    lieu: Lavernat (72)
+  - date: 11/09/2022
+    nom: Solstice Festival
+    lieu: Beaulieu-Les-Loches (37)
+  - date: 13/01/2023
+    nom: Dame de Canton
+    lieu: Paris (75)
   - date: 30/09/2023
     nom: Guinguette Le Lavoir
     lieu: Preuilly-sur-Claise (37)
@@ -35,7 +69,8 @@ dates:
 
 news:
   - titre: Le nouvel EP est là !
-    description: "'Assez' est sortie ! 100% auto-produit : c'est la garantie d'un EP tout à fait schizophrène Jazzy, hip-hoppy, variety, rappy..."
+    description: "'Assez' est sortie ! 100% auto-produit : c'est la garantie d'un EP tout à fait schizophrène Jazzy, hip-hoppy, variety, rappy...\n
+      [Spotifiy](https://open.spotify.com/album/4ZQvcyjCVXQHXvMGXvjtNQ) - [Deezer](https://www.deezer.com/en/album/463718785) - [Youtube](https://youtube.com/playlist?list=PLRm7cNa23pMpCPGKBzrhOyARvtKodQX15)"
     image: https://pushka-content.s3.eu-west-3.amazonaws.com/Assez.jpg
   - titre: Laver'Night
     description: "On était de passage à Lavernat le 11 septembre pour la 1er édition du festival Laver'Night, un vrai plaisir de vous retrouver et de faire la fête ensemble, vivement la suite !"
